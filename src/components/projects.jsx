@@ -2,9 +2,11 @@ import { React, useState } from "react";
 
 import { Image, Card, Space, Form, Input, Button, Checkbox, Upload, Col, Row, Alert } from "antd";
 import { PlusOutlined } from "@ant-design/icons";
-import downloadImg from '../assets/download.png';
+import weatherImg from '../assets/weather.png';
+import rickImg from '../assets/rick & morty.png';
 import { useNavigate } from "react-router-dom";
 import { Route, Routes } from "react-router-dom";
+import Paragraph from "antd/es/skeleton/Paragraph";
 
 
 
@@ -40,15 +42,21 @@ const Projects = () => {
             <Row gutter={16}>
                 <Col span={30}>
                     <Card title="Weather Table" variant="borderless">
-                        <img src={downloadImg} alt="download" />
-                        <Button type="primary" onClick={() => navigate('/table')}>Weather Project</Button>
+                        <img src={weatherImg} alt="download" />
+                        Weather refers to the atmospheric conditions.
                     </Card>
+                    <Button type="primary" onClick={() => navigate('/table')}>Weather Project</Button>
                 </Col>
                 <Col span={8}>
-                    <Card title="Card title" variant="borderless">
-                        <img src={downloadImg} alt="download" />
-                        Card content
+                    <Card title="Rick and Morty." variant="borderless">
+                        <img src={rickImg} alt="download" />
+                        
+                            The Rick and Morty API provides information 
+                            about characters, episodes, and locations 
+                            from the animated TV show Rick and Morty.
+                        
                     </Card>
+                    <Button type="primary" onClick={() => navigate('/poki')}>POKI</Button>
                 </Col>
             </Row>
 

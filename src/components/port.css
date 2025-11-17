@@ -1,5 +1,5 @@
-*{
-    
+* {
+
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -7,8 +7,8 @@
 
 
 /* nav----------------------------------------------------------------------- */
-.btn{
-    size:20px;
+.btn {
+    size: 20px;
     color: white;
     padding: 10px 15px;
     border-radius: 5px;
@@ -19,21 +19,22 @@
     display: flex;
     justify-content: flex-end;
     gap: 10px;
-    
+
 }
 
-.btn #link-btn{
+.btn #link-btn {
     background-color: teal;
     color: white;
     border-radius: 5px;
 }
 
-#link-btn:hover{
+#link-btn:hover {
     background-color: aqua;
     color: black;
     transition: 0.5s;
     font-weight: bold;
 }
+
 /* -------------------------------------------------------------------------- */
 
 /* image --------------------------------------------------------------------- */
@@ -48,9 +49,10 @@
     position: right;
     background: transparent;
 }
+
 /* ------------------------------------------------------------------------------ */
 /* name --------------------------------------------------------------------------*/
-.name{
+.name {
     text-align: center;
     margin-top: 20px;
     display: flex;
@@ -59,37 +61,41 @@
     align-items: right;
 }
 
-.name p{
+.name p {
     font-size: 20px;
     color: red;
     justify-content: center;
 }
 
-.name h1{
+.name h1 {
     font-size: 40px;
     margin-top: 10px;
 }
-h1:hover{
+
+h1:hover {
     color: aqua;
     transition: 0.5s;
-    text-decoration: red ;
-}   
+    text-decoration: red;
+}
+
 /* ------------------------------------------------------------------------------- */
 
 /* about----------------------------------------------------------- */
-#sum{
+#sum {
     color: aqua;
     /* margin-bottom: 20px; */
     margin-top: 20px;
     display: flex;
     justify-content: center;
-    
+
 }
-.SUMMARY p{
+
+.SUMMARY p {
     justify-content: center;
 }
+
 /* connect ------------------------------------------------------- */
-.icons{
+.icons {
     font-size: 25px;
     display: flex;
     justify-content: center;
@@ -98,12 +104,10 @@ h1:hover{
 }
 
 /* skills-------------------------------------------------------------------- */
-.best #icons-skills{
+.best #icons-skills {
     margin-top: 10px;
     font-size: 18px;
     display: flex;
     justify-content: left;
     gap: 10px;
 }
-
-
