@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Spin, Table } from 'antd';
+import { Table } from 'antd';
 const PokiApi = () => {
 
 
@@ -46,8 +46,12 @@ const PokiApi = () => {
             title: "IMAGES",
             dataIndex: "image",
             key: "image",
-            render: (img) => (<img src="{img}" />
-
+            render: (img) => (
+                <img
+                    src={img}
+                    alt="character"
+                    style={{ width: 64, height: 64, objectFit: 'cover', borderRadius: 6 }}
+                />
             ),
         }
     ];
@@ -82,8 +86,13 @@ const PokiApi = () => {
         getData();
     }, []);
     return (
-        <Table dataSource={tableData} columns={tableColumns} rowKey="id" />
-    )
+        <Table
+            dataSource={tableData}
+            columns={tableColumns}
+            rowKey="id"
+            loading={!tableData.length}
+        />
+    );
 };
 
 export default PokiApi;

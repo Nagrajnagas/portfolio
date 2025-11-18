@@ -7,7 +7,7 @@ import rickImg from '../assets/rick & morty.png';
 import { useNavigate } from "react-router-dom";
 import { Route, Routes } from "react-router-dom";
 import Paragraph from "antd/es/skeleton/Paragraph";
-
+import './projects.css'
 
 
 
@@ -39,15 +39,19 @@ const Projects = () => {
         <div>
 
             <h3>My Projects are</h3>
-            <Row gutter={16}>
-                <Col span={30}>
+            <div className="pro">
+                
+                <div className="pro1">
+                    <Col>
                     <Card title="Weather Table" variant="borderless">
                         <img src={weatherImg} alt="download" />
                         Weather refers to the atmospheric conditions.
                     </Card>
-                    <Button type="primary" onClick={() => navigate('/table')}>Weather Project</Button>
+                    <Button className="btn" type="primary" onClick={() => navigate('/table')}>Weather Project</Button>
                 </Col>
-                <Col span={8}>
+                </div>
+                <div className="pro2">
+                    <Col>
                     <Card title="Rick and Morty." variant="borderless">
                         <img src={rickImg} alt="download" />
                         
@@ -56,14 +60,17 @@ const Projects = () => {
                             from the animated TV show Rick and Morty.
                         
                     </Card>
-                    <Button type="primary" onClick={() => navigate('/poki')}>POKI</Button>
+                    <Button className="btn" type="primary" onClick={() => navigate('/poki')}>POKI</Button>
                 </Col>
-            </Row>
+                </div>
+            
+            </div>
 
             <div>
 
                 <h3>For reaching Me</h3>
-                <Form
+                <fieldset>
+                    <Form
                     name="basic"
                     labelCol={{ span: 8 }}
                     wrapperCol={{ span: 16 }}
@@ -90,7 +97,7 @@ const Projects = () => {
                         <Upload action="https://httpbin.org/post" listType="picture-card">
                             <button type="button" style={{ color: 'inherit', cursor: 'inherit', border: 0, background: 'none' }}>
                                 <PlusOutlined />
-                                <div style={{ marginTop: 8 }}>Upload</div>
+                                <div >Upload</div>
                             </button>
                         </Upload>
                     </Form.Item>
@@ -110,6 +117,7 @@ const Projects = () => {
 
 
                 </Form>
+                </fieldset>
             </div>
 
         </div>
