@@ -40,9 +40,9 @@ const Projects = () => {
 
             <h3>My Projects are</h3>
             <div className="pro">
-
+                
                 <div className="pro1">
-                    <Col>
+                    <Col span={6}>
                         <Card title="Weather Table" variant="borderless">
                             <img src={weatherImg} alt="download" />
                             Weather refers to the atmospheric conditions.
@@ -51,7 +51,7 @@ const Projects = () => {
                     </Col>
                 </div>
                 <div className="pro2">
-                    <Col>
+                    <Col span={6}>
                         <Card title="Rick and Morty." variant="borderless">
                             <img src={rickImg} alt="download" />
 
