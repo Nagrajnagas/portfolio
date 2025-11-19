@@ -29,7 +29,8 @@ const My = () => {
 
 
                 <div ><Button id='link-btn' type='primary' href='tel:7483969076' target='_blank' >Phone</Button></div>
-                <div ><Button id='link-btn' type='primary' href='https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox' target='_blank' >Gmail</Button></div>
+                <div ><Button id='link-btn' type='primary' href="https://mail.google.com/mail/?view=cm&fs=1&to=nagarajnag7483@gmail.com">Gmail</Button></div>
+                
                 <div ><Button id='link-btn' type='primary' href='https://www.linkedin.com/in/nagaraj-s-a9a5b625b/' target='_blank' >LinkedIn</Button></div>
                 <div ><Button id='link-btn' type='primary' href='https://github.com/' target='_blank' >GitHub</Button></div>
                 <div ><Button id='link-btn' type='primary' onClick={() => navigate('/projects')}>Projects</Button></div>

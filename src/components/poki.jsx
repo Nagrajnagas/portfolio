@@ -89,8 +89,7 @@ const PokiApi = () => {
         <Table
             dataSource={tableData}
             columns={tableColumns}
-            rowKey="id"
-            loading={!tableData.length}
+            
         />
     );
 };
